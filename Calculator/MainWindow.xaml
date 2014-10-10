@@ -75,7 +75,7 @@
     			Width="75" Height="75"
     			Background="#FF494949" Foreground="White" BorderBrush="Black" Click="buttonremove_Click"/>
             <Button x:Name="buttonmulti" FontSize="40"
-    			Content="X" HorizontalAlignment="Left" 
+    			Content="x" HorizontalAlignment="Left" 
     			Margin="281,184,0,0" VerticalAlignment="Top" 
     			Width="75" Height="75"
     			Background="#FF494949" Foreground="White" BorderBrush="Black" Click="buttonmulti_Click"/>
