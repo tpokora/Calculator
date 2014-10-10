@@ -41,10 +41,27 @@ namespace Calculator
             return Current;
         }
 
-        public string solve()
+        public string Solve()
         {
             string output = "";
+            if (Current.Contains("+"))
+            {
+                string [] numbers = Current.Split('+');
+                for (int i = 0; i < numbers.Length; i++)
+                {
 
+                }
+                double result = 0.0;
+                foreach (string s in numbers)
+                {
+                    result = add(result, Double.Parse(s));
+                }
+                output = result.ToString();
+            }
+            else
+            {
+                output = Current;
+            }
             return output;
         }
 

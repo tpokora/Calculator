@@ -39,5 +39,19 @@ namespace CaclculatorTest
             Assert.AreEqual("", op.Current);
             Assert.AreEqual("0", op.Result);
         }
+
+        [TestMethod]
+        public void TestSolveOneNumber()
+        {
+            op.Current = "3";
+            Assert.AreEqual("3", op.Solve());
+        }
+
+        [TestMethod]
+        public void TestSolveAddTwoNumbers()
+        {
+            op.Current = "3+3";
+            Assert.AreEqual("6", op.Solve());
+        }
     }
 }
